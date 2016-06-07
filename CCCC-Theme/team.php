@@ -26,33 +26,42 @@
 
 			<h2><?php the_title(); ?></h2>
 
-			<div class="profile">
+		
 
 			<?php if(get_field('members')): ?>  
 
 						<?php while(has_sub_field('members')): ?>
+							
+					<div class="profile">			
 
 				<div class="profile-image four columns">				
 
-				<img src="http://www.wealthcg.com/sites/default/files/users/wealthconsultinggroup/images/placeholder-male.png" alt="">						
+				<img src="<?php the_sub_field('picture'); ?>" alt="">						
 
 				</div>
 
 				<div class="profile-content seven columns">
 
-				<h3><?php the_sub_field('position'); ?></h3>
+				<h3 class="name"><?php the_sub_field('name'); ?></h3>
 
-				<p class="name"><?php the_sub_field('name'); ?></p>
+				<p><strong>Nickname:</strong> <?php the_sub_field('position'); ?></p>				
 
-					<p><?php the_sub_field('bio'); ?></p>
+				<p><strong>Member Since:</strong><?php the_sub_field('member-since'); ?></p>
+
+				<p><strong>Car:</strong><?php the_sub_field('car'); ?></p>
+
+				<p><strong>Hobbies:</strong><?php the_sub_field('hobbies'); ?></p>
+
+				<p><?php the_sub_field('bio'); ?></p>
 
 				</div>
+			</div>
 
 				<?php endwhile; ?>
 
  				<?php endif; ?> 	
 
-			</div>
+			
 
 
 
