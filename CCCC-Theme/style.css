@@ -3141,13 +3141,13 @@ body .ui-tooltip {
   display: inline;
   margin: 0rem 1.6875rem 0rem 0rem;
 }
-.header .nav ul li:last-child {
+/*.header .nav ul li:last-child {
   border: 2px solid #902c1c;
   padding: 0.5rem 0.2rem;
   margin-right: 0rem;
   transition: background 0.3s ease-in;
 }
-/*.header .nav ul li:last-child:hover {
+.header .nav ul li:last-child:hover {
   background: #902c1c;
   color: #fff !important;
 }
