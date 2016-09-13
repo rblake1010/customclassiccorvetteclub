@@ -44,15 +44,9 @@
 
 				<h3 class="name"><?php the_sub_field('name'); ?></h3>
 
-				<p><strong>Nickname:</strong> <?php the_sub_field('position'); ?></p>				
+				<p><strong>Position:</strong> <?php the_sub_field('position'); ?></p>				
 
-				<p><strong>Member Since:</strong><?php the_sub_field('member-since'); ?></p>
-
-				<p><strong>Car:</strong><?php the_sub_field('car'); ?></p>
-
-				<p><strong>Hobbies:</strong><?php the_sub_field('hobbies'); ?></p>
-
-				<p><?php the_sub_field('bio'); ?></p>
+				<p><strong>Email:</strong><?php the_sub_field('member-since'); ?></p>
 
 				</div>
 			</div>

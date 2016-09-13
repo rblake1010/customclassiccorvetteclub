@@ -56,7 +56,7 @@
 
 
 
-<div class="quote">
+<div class="quote" style="display:none">
 
   <div class="container">
 
@@ -78,7 +78,7 @@
 
         </div>
 
-         <div class="register-button">
+         <div class="register-button" style="display:none">
 
            <a href="#"><?php the_field('event_button'); ?></a>
 
@@ -142,7 +142,7 @@
 
           <?php while(has_sub_field('friends')): ?>            
 
-           <li><img src="<?php the_sub_field('friend_logos'); ?> "/> </li>                 
+           <li><a href="<?php the_sub_field('friend_link'); ?>"><img src="<?php the_sub_field('friend_logos'); ?> "/></a> </li>                 
 
           <?php endwhile; ?>          
 

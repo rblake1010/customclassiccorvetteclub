@@ -23,7 +23,7 @@
 
 			// Variables
 			$row              = 0;
-			$images_per_page  = 2; // How many images to display on each page
+			$images_per_page  = 10; // How many images to display on each page
 			$images           = get_field( 'Images' );
 			$total            = count( $images );
 			$pages            = ceil( $total / $images_per_page );
